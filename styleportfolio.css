@@ -160,7 +160,6 @@ footer span {
 
 .text-blue {
     position: absolute;
-    height: 140px;
     width: 402px;
     color: #FFF;
     font-family: Roboto;
@@ -168,6 +167,7 @@ footer span {
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 0.54px;
+    margin-left: 10px;
 }
 
 .img-blue {
@@ -500,5 +500,17 @@ a {
 
     footer ul li:nth-of-type(4) {
         margin-top: 50px;
+    }
+
+    .text-blue {
+        width: 314px;
+    }
+
+    .menuBlock {
+        width: 768px;
+    }
+
+    .closeButton {
+        left: 660px;
     }
 }
