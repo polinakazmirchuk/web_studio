@@ -98,6 +98,7 @@ footer span {
     gap: 30px;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     margin: 60px 0;
     background: white;
 }
@@ -162,7 +163,7 @@ footer span {
 }
 
 .team-list {
-
+    flex-wrap: nowrap;
     margin-top: 30px;
     gap: 30px;
     display: flex;
@@ -202,8 +203,13 @@ footer span {
     margin-top: 16px;
 }
 
+.team-list img {
+    width: 450px;
+}
+
 .team-list li {
     height: 622px;
+    width: 450px;
     border-radius: 0px 0px 4px 4px;
     background: #FFF;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -219,12 +225,13 @@ footer span {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 
 
 .clients h5 {
-    width: 314px;
+    width: 100%;
     color: #212121;
     text-align: center;
     font-family: Roboto;
@@ -235,12 +242,14 @@ footer span {
 
 
 .clients div {
+    margin-left: 0;
     margin-top: 30px;
     height: 336px;
     width: 450px;
-
+    flex-direction: row;
     display: flex;
     justify-content: space-between;
+    gap: 0;
 }
 
 .clients div ul {
@@ -249,7 +258,7 @@ footer span {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
+    gap: 0;
 }
 
 .clients div ul li {
@@ -282,6 +291,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 .footer-contacts {
@@ -392,6 +402,7 @@ footer ul li:nth-of-type(2) {
     justify-content: space-between;
     gap: 8px;
     align-items: center;
+    margin-left: 0;
 }
 
 
@@ -403,6 +414,7 @@ footer ul li:nth-of-type(3) {
     justify-content: space-between;
     align-items: center;
     align-items: center;
+    margin-left: 0;
 }
 
 
@@ -414,12 +426,16 @@ footer ul li:nth-of-type(4) {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-left: 0;
 }
 
 footer ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: nowrap;
+    justify-content: start;
+    gap: 0;
 }
 
 .menuBlock {
@@ -497,13 +513,127 @@ a {
 
 
 
-/*
+
 @media (min-width:768px) {
-    body {
-        background: #ff0000;
+    .page {
+        width: 768px;
+    }
+
+    .intro {
+        width: 768px;
+    }
+
+    .details {
+        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 480px;
+        background: white;
+        margin-left: 35px;
+    }
+
+    .details .forSvg+div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        height: 76px;
+        gap: 10px;
+        width: 354px;
+    }
+
+    .forSvg {
+        width: 354px;
+    }
+
+    .team {
+        height: 1285px;
+        width: 768px;
+        padding: 15px;
+    }
+
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .team-list li {
+        height: 536px;
+        width: 354px;
+    }
+
+    .team-list img {
+        width: 354px;
+    }
+
+    .clients {
+        padding: 60px 15px;
+        height: 519px;
+        width: 768px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .clients div ul {
+        width: 738px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .clients div {
+        margin-top: 30px;
+        height: 336px;
+        width: 450px;
+        flex-direction: column;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 20px;
+        gap: 30px;
+    }
+
+    footer {
+        height: 603px;
+        width: 768px;
+        background: #2F303A;
+        padding: 60px 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px 80px;
+    }
+
+    footer ul li:nth-of-type(2) {
+        margin-top: 40px;
+        margin-left: -270px;
+    }
+
+
+    footer ul li:nth-of-type(3) {
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+
+    footer ul li:nth-of-type(4) {
+        margin-top: 50px;
     }
 }
 
+/*
 @media (min-width:1600px) {
     body {
         background: #001aff;
