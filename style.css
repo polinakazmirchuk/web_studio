@@ -56,7 +56,7 @@ footer span {
     width: 480px;
     height: 400px;
     background-size: cover;
-    background-position: 100px -100px;
+    background-position: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -520,6 +520,7 @@ a {
 
     .intro {
         width: 768px;
+        background-position: 0 -60px;
     }
 
     .details {
@@ -589,6 +590,10 @@ a {
         gap: 30px;
     }
 
+    .headline {
+        text-align: center;
+    }
+
     .clients div {
         margin-top: 30px;
         height: 336px;
@@ -608,6 +613,7 @@ a {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        margin-top: -60px;
     }
 
     footer ul {
@@ -654,6 +660,7 @@ a {
         width: 1600px;
         background-image: url(./img/016.jpeg);
         height: 600px;
+        background-position: 100px -100px;
     }
 
     .details {
