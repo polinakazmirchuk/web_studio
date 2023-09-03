@@ -55,7 +55,8 @@ footer span {
     background-image: url(./img/001.png);
     width: 480px;
     height: 400px;
-    background-size: contain;
+    background-size: cover;
+    background-position: 100px -100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -546,6 +547,10 @@ a {
         width: 354px;
     }
 
+    .headline {
+        text-align: left;
+    }
+
     .team {
         height: 1285px;
         width: 768px;
@@ -639,9 +644,135 @@ a {
     }
 }
 
-/*
+
 @media (min-width:1600px) {
-    body {
-        background: #001aff;
+    .page {
+        width: 1600px;
     }
-}*/
+
+    .intro {
+        width: 1600px;
+        background-image: url(./img/016.jpeg);
+        height: 600px;
+    }
+
+    .details {
+        width: 1600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        height: 280px;
+        background: white;
+        margin-left: 35px;
+    }
+
+    .details .forSvg+div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 30px;
+        height: 76px;
+        gap: 10px;
+        width: 270px;
+    }
+
+    .forSvg {
+        width: 270px;
+    }
+
+    .team {
+        height: 708px;
+        width: 1600px;
+        padding: 94px;
+    }
+
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .team-list li {
+        height: 428px;
+        width: 270px;
+    }
+
+    .team-list img {
+        width: 270px;
+    }
+
+    .clients {
+        padding: 60px 15px;
+        height: 419px;
+        width: 1600px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .clients div ul {
+        width: 600px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .clients div {
+        margin-top: 0;
+        height: 200px;
+        width: 450px;
+        flex-direction: row;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 130px;
+        gap: 30px;
+    }
+
+    footer {
+        height: 303px;
+        width: 1600px;
+        background: #2F303A;
+        padding: 0 260px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+
+    footer ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px 100px;
+    }
+
+
+
+    footer ul li:nth-of-type(2) {
+        margin-top: 85px;
+        margin-left: -270px;
+    }
+
+
+    footer ul li:nth-of-type(3) {
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+
+
+    footer ul li:nth-of-type(4) {
+        margin-top: 50px;
+    }
+
+    .menuBlock {
+        width: 1600px;
+    }
+
+    .closeButton {
+        left: 1500px;
+    }
+}

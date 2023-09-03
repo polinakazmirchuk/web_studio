@@ -425,6 +425,7 @@ a {
         align-items: center;
         margin-top: 40px;
         flex-wrap: wrap;
+        padding: 0;
     }
 
     .stuff-list li {
@@ -500,6 +501,133 @@ a {
 
     footer ul li:nth-of-type(4) {
         margin-top: 50px;
+    }
+
+    .text-blue {
+        width: 314px;
+    }
+
+    .menuBlock {
+        width: 768px;
+    }
+
+    .closeButton {
+        left: 660px;
+    }
+}
+
+
+@media (min-width:1600px) {
+    .page {
+        margin: 0 auto;
+        width: 1600px;
+        background: rgb(255, 255, 255);
+    }
+
+    .stuff-list ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+        margin-top: -20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 30px;
+    }
+
+    .stuff-list li {
+        width: 370px;
+        height: 404px;
+        border: 1px solid #EEE;
+        background: #FFF;
+        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    .stuff-list li img {
+        width: 370px;
+    }
+
+    .img-blue img {
+        width: 370px;
+        height: 294px;
+        position: absolute;
+        opacity: 10%;
+    }
+
+    .text-blue {
+        position: absolute;
+        height: 140px;
+        width: 354px;
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.54px;
+    }
+
+    .img-blue {
+        width: 354px;
+        height: 294px;
+        background-color: #2195f3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttons-wrapper {
+        height: 91px;
+        width: 626px;
+        display: flex;
+        margin: 40px auto;
+        flex-wrap: wrap;
+        gap: 0 8px;
+    }
+
+    .buttons button:nth-child(4) {
+        margin-top: 0;
+    }
+
+    .buttons button:nth-child(5) {
+        margin-top: 0;
+    }
+
+    footer {
+        height: 303px;
+        width: 1600px;
+        background: #2F303A;
+        padding: 60px 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px 100px;
+    }
+
+    footer ul li:nth-of-type(2) {
+        margin-top: 40px;
+        margin-left: -270px;
+    }
+
+
+    footer ul li:nth-of-type(3) {
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+
+    footer ul li:nth-of-type(4) {
+        margin-top: 10px;
     }
 
     .text-blue {
